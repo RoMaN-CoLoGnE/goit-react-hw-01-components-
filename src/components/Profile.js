@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import noImage from '../images/noImage.jpg';
 
-export default function Profile({
+function Profile({
   username,
   tag,
   location,
@@ -11,7 +11,12 @@ export default function Profile({
   return (
     <div className="profile">
       <div className="description">
-        <img className="avatar" src={avatar} alt="User avatar" width="300" />
+        <img
+          className="avatar"
+          src={avatar ?? noImage}
+          alt="User avatar"
+          width="300"
+        />
         <p className="name">{username}</p>
         <p className="tag">{tag}</p>
         <p className="location">{location}</p>
@@ -35,12 +40,16 @@ export default function Profile({
   );
 }
 
-Profile.propType = {
-  username: PropTypes.string,
-  tag: PropTypes.string,
-  location: PropTypes.string,
-  avatar: PropTypes.string,
-  followers: PropTypes.number,
-  views: PropTypes.number,
-  likes: PropTypes.number,
+Profile.propTypes = {
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+  }),
 };
+
+export default Profile;

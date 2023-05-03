@@ -1,10 +1,13 @@
-import Profile from './components/User';
-import user from './user.json';
+import ProfileList from './components/ProfileList';
+import Section from './components/Section';
+import users from './components/user.json';
 
 export default function App() {
   return (
     <div>
-      <Profile {...user} />
+      <Section>
+        <ProfileList items={users} />
+      </Section>
     </div>
   );
 }
