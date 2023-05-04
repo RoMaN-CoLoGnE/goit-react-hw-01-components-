@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
-import Profile from './Profile';
+import Profile from '../Profile/Profile';
+import s from './ProfileList.module.css';
 
 function ProfileList({ items }) {
   return (
-    <ul>
+    <ul className={s.ProfileList}>
       {items.map(item => (
-        <li key={item.tag}>
+        <li className={s.ProfileItem} key={item.tag}>
           <Profile
             username={item.username}
             tag={item.tag}

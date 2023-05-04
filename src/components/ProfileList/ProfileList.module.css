@@ -1,0 +1,18 @@
+.ProfileList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 30px;
+  border-radius: 30px;
+  background-color: #dbd2d2;
+}
+
+.ProfileItem {
+  padding: 30px;
+  width: calc(100% / 3 - 20px);
+  border-radius: 30px;
+  background-color: #b4717137;
+  box-shadow: 9px 15px 25px rgba(0, 0, 0, 0.5);
+}
