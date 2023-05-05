@@ -1,13 +1,20 @@
 import ProfileList from '../ProfileList/ProfileList';
-import Container from '../Container/Container';
-import users from './user.json';
+import users from './Users.json';
+
+import Statistics from '../Statistics/Statistics';
+import data from './StatsData.json';
+
+import FriendsList from '../FriendsList/FriendsList';
+import friends from './Friends.json';
 
 export default function App() {
   return (
     <main className="Main">
-      <Container>
-        <ProfileList items={users} />
-      </Container>
+      <ProfileList items={users} />
+
+      <Statistics title="Upload stats" stats={data} />
+
+      <FriendsList items={friends} />
     </main>
   );
 }

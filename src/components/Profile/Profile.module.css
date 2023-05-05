@@ -4,48 +4,14 @@
   --text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
 }
 
-.text {
-  color: var(--text-color);
-  text-shadow: var(--text-shadow);
-}
-
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.rounded {
-  border-radius: 30px;
-}
-
-.shadow {
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-}
-
-.ProfileWrapper {
-  composes: center;
-  padding: 20px;
-}
-
 .Description {
   text-align: center;
 }
 
 .Avatar {
-  composes: center rounded;
+  border-radius: 30px;
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 10px;
   width: 250px;
   height: 250px;
   overflow: hidden;
@@ -53,26 +19,31 @@
 }
 
 .Name {
-  composes: text;
+  color: var(--text-color);
+  text-shadow: var(--text-shadow);
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
 .Tag {
-  composes: text;
+  color: var(--text-color);
+  text-shadow: var(--text-shadow);
   font-size: 20px;
   margin-bottom: 10px;
 }
 
 .Location {
-  composes: text;
+  color: var(--text-color);
+  text-shadow: var(--text-shadow);
   font-size: 20px;
   margin-bottom: 30px;
 }
 
 .Stats {
-  composes: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .StatsItem {
@@ -80,7 +51,8 @@
 }
 
 .Label {
-  composes: text;
+  color: var(--text-color);
+  text-shadow: var(--text-shadow);
   font-size: 18px;
 }
 

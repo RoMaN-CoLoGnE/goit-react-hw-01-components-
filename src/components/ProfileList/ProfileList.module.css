@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 50px;
   padding: 30px;
   border-radius: 30px;
   background-color: #dbd2d2;
@@ -11,8 +11,14 @@
 
 .ProfileItem {
   padding: 30px;
-  width: calc(100% / 3 - 20px);
+  width: calc(100% / 3 - 50px);
   border-radius: 30px;
   background-color: #b4717137;
   box-shadow: 9px 15px 25px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.ProfileItem:hover {
+  transform: scale(1.05);
+  box-shadow: 15px 25px 35px rgba(0, 0, 0, 0.8);
 }

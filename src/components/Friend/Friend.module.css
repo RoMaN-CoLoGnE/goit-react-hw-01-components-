@@ -1,0 +1,44 @@
+.ListItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  width: calc(100% / 5 - 30px);
+  border-radius: 30px;
+  background-color: #b4717137;
+  box-shadow: 9px 15px 25px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.ListItem:hover {
+  transform: scale(1.05);
+  box-shadow: 15px 25px 35px rgba(0, 0, 0, 0.8);
+}
+
+.StatusOnline {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(89, 139, 89);
+}
+
+.StatusOffline {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(163, 94, 94);
+}
+
+.Avatar {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+}
+
+.Name {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text-color);
+  text-shadow: var(--text-shadow);
+}

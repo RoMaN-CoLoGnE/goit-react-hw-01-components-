@@ -1,0 +1,54 @@
+:root {
+  --text-color: #7b5858;
+  --text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.StatWrap {
+  padding: 30px;
+  border-radius: 30px;
+  background-color: #dbd2d2;
+}
+
+.Title {
+  margin-bottom: 20px;
+  color: var(--text-color);
+  text-shadow: var(--text-shadow);
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.StatList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.ListItem {
+  border-radius: 30px;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #b4717137;
+  box-shadow: 9px 15px 25px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.ListItem:hover {
+  transform: scale(1.05);
+  box-shadow: 15px 25px 35px rgba(0, 0, 0, 0.8);
+}
+
+.Label {
+  text-shadow: var(--text-shadow);
+}
+
+.Percentage {
+  text-shadow: var(--text-shadow);
+}
