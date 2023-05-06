@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import Container from '../Container/Container';
-import Profile from '../Profile/Profile';
+import Profile from './Profile/Profile';
 import s from './ProfileList.module.css';
 
 function ProfileList({ items }) {

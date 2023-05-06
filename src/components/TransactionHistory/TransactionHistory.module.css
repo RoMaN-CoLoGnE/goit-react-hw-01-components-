@@ -1,0 +1,52 @@
+:root {
+  --text-color: #7b5858;
+  --text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.TransactionWrapper {
+  width: 100%;
+  padding: 30px;
+  border-radius: 30px;
+  background-color: #dbd2d2;
+  color: var(--text-color);
+}
+
+.TransactionTitle {
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: var(--text-shadow);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.TransactionTable {
+  width: 100%;
+  font-size: 18px;
+  box-shadow: 9px 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+.TransactionThead {
+  font-size: 20px;
+  text-shadow: var(--text-shadow);
+  background-color: #b4717137;
+}
+
+.TransactionHeader {
+  font-weight: 600;
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #b47171a7;
+}
+
+.TransactionRow {
+  background-color: #7f6a6a81;
+}
+
+.TransactionRow:nth-child(odd) {
+  background-color: #7f6a6a29;
+}
+
+.TransactionCell {
+  padding: 8px;
+  border: 1px solid #b47171a7;
+}

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import Container from '../Container/Container';
-import Friend from '../Friend/Friend';
+import Friend from './Friend/Friend';
 import s from './FriendsList.module.css';
 
 function FriendList({ items }) {

@@ -7,6 +7,9 @@ import data from './StatsData.json';
 import FriendsList from '../FriendsList/FriendsList';
 import friends from './Friends.json';
 
+import TransactionHistory from '../TransactionHistory/TransactionHistory';
+import transactions from './transactions.json';
+
 export default function App() {
   return (
     <main className="Main">
@@ -15,6 +18,8 @@ export default function App() {
       <Statistics title="Upload stats" stats={data} />
 
       <FriendsList items={friends} />
+
+      <TransactionHistory items={transactions} />
     </main>
   );
 }

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import s from './Friend.module.css';
-import noImage from '../Profile/noImage.jpg';
+import noImage from '../../ProfileList/Profile/noImage.jpg';
 
 function Friend({ avatar, name, isOnline }) {
   return (
